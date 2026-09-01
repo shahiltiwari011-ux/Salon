@@ -186,8 +186,11 @@ const bindEvents = () => {
     }
   });
 
+  const mobileMenuBackdrop = document.querySelector("#mobile-menu-backdrop");
+
   const openMenu = () => {
     if (!mobileMenu) return;
+    if (mobileMenuBackdrop) mobileMenuBackdrop.hidden = false;
     mobileMenu.hidden = false;
     mobileMenu.classList.remove("is-open");
     menuToggle?.setAttribute("aria-expanded", "true");
@@ -199,6 +202,7 @@ const bindEvents = () => {
     if (!mobileMenu || mobileMenu.hidden) {
       menuToggle?.setAttribute("aria-expanded", "false");
       document.body.classList.remove("menu-open");
+      if (mobileMenuBackdrop) mobileMenuBackdrop.hidden = true;
       return;
     }
     menuToggle?.setAttribute("aria-expanded", "false");
@@ -207,6 +211,7 @@ const bindEvents = () => {
     window.setTimeout(() => {
       if (menuToggle?.getAttribute("aria-expanded") === "false") {
         mobileMenu.hidden = true;
+        if (mobileMenuBackdrop) mobileMenuBackdrop.hidden = true;
       }
     }, 220);
   };
@@ -220,6 +225,7 @@ const bindEvents = () => {
   });
 
   menuClose?.addEventListener("click", closeMenu);
+  mobileMenuBackdrop?.addEventListener("click", closeMenu);
 
   // Navbar CTA buttons & Book buttons open appointment modal
   document.querySelectorAll('.desktop-cta a, .hero__actions a[href="#contact"], .cta-actions a[href="#contact"]').forEach((btn) => {

@@ -16,9 +16,6 @@ const renderNavbar = (data, currentRoute) => `
       <span class="brand__eyebrow">Family Salon</span>
       <span class="brand__name">${data.shortName}</span>
     </a>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
-      ${icon("menu")}
-    </button>
     <div class="nav-links desktop-nav">
       ${navItems
         .map(
@@ -33,11 +30,15 @@ const renderNavbar = (data, currentRoute) => `
     <div class="desktop-cta">
       <a class="button button--primary" href="#contact">Book Appointment</a>
     </div>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+      ${icon("menu")}
+    </button>
+    <div class="mobile-menu-backdrop" id="mobile-menu-backdrop" hidden data-mobile-menu-close></div>
     <div class="mobile-menu" id="mobile-menu" hidden>
       <div class="mobile-menu__header">
         <div>
           <p class="eyebrow">${data.shortName}</p>
-          <p class="mobile-menu__title">Navigate the salon website</p>
+          <h2 class="mobile-menu__title">Salon Menu</h2>
         </div>
         <button class="menu-close" type="button" aria-label="Close menu">
           ${icon("close")}
