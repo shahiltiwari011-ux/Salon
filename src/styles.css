@@ -302,6 +302,10 @@ textarea:focus-visible {
   padding: 0;
 }
 
+.menu-toggle {
+  margin-left: auto;
+}
+
 .menu-toggle,
 .menu-close {
   display: none;
@@ -1128,7 +1132,9 @@ textarea {
 
 @media (max-width: 1024px) {
   .navbar {
-    grid-template-columns: auto 1fr auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .desktop-nav,
