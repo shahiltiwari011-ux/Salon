@@ -79,7 +79,7 @@ const validateField = (field) => {
   return !message;
 };
 
-const handleFormSubmit = async (event) => {
+const handleFormSubmit = (event) => {
   event.preventDefault();
   const appointmentForm = event.currentTarget;
   const formStatus = appointmentForm.querySelector(".form-status");
@@ -102,44 +102,16 @@ const handleFormSubmit = async (event) => {
     submitButton.disabled = true;
     submitButton.classList.add("is-loading");
   }
-  if (formStatus) {
-    formStatus.innerHTML = `
-      <div class="form-alert form-alert--info">
-        Sending your appointment request...
-      </div>
-    `;
-  }
 
   const payload = Object.fromEntries(new FormData(appointmentForm).entries());
-  const fallbackRef = `SBS-${Math.random().toString(36).substring(2, 7).toUpperCase()}`;
+  const refCode = `SBS-${Math.random().toString(36).substring(2, 7).toUpperCase()}`;
 
-  let isSuccess = false;
-  let finalRef = fallbackRef;
-
+  // Pure static client-side local storage booking
   try {
-    const response = await fetch("/api/appointments", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(payload)
-    });
-    
-    if (response.ok) {
-      const result = await response.json();
-      finalRef = result.reference || fallbackRef;
-      isSuccess = true;
-    }
-  } catch (error) {
-    // Backend API fallback
-  }
-
-  if (!isSuccess) {
-    try {
-      const saved = JSON.parse(localStorage.getItem("salon_appointments") || "[]");
-      saved.push({ reference: fallbackRef, receivedAt: new Date().toISOString(), ...payload });
-      localStorage.setItem("salon_appointments", JSON.stringify(saved));
-    } catch (e) {}
-    isSuccess = true;
-  }
+    const saved = JSON.parse(localStorage.getItem("salon_appointments") || "[]");
+    saved.unshift({ reference: refCode, receivedAt: new Date().toLocaleString(), ...payload });
+    localStorage.setItem("salon_appointments", JSON.stringify(saved));
+  } catch (e) {}
 
   appointmentForm.reset();
 
@@ -156,7 +128,7 @@ const handleFormSubmit = async (event) => {
       <div class="form-alert form-alert--success">
         <div class="form-alert__header">
           <span class="form-alert__badge">✓ Booking Received</span>
-          <strong>Ref: ${finalRef}</strong>
+          <strong>Ref: ${refCode}</strong>
         </div>
         <p>Thank you, <strong>${payload.name || "valued client"}</strong>! Your request for <strong>${payload.service}</strong> on <strong>${payload.date}</strong> at <strong>${payload.time}</strong> has been successfully recorded.</p>
         <p class="form-alert__footer">Our salon team will contact you shortly at <strong>${payload.phone}</strong> to confirm your slot.</p>
