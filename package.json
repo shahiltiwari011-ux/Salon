@@ -1,0 +1,9 @@
+{
+  "name": "shine-by-sparsh-salon-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Premium static website for Shine By Sparsh, Family Salon in Satna.",
+  "scripts": {
+    "start": "node server.mjs"
+  }
+}
