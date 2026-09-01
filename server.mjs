@@ -98,6 +98,12 @@ const server = createServer((request, response) => {
   const filePath = join(root, safePath);
 
   if (!existsSync(filePath) || statSync(filePath).isDirectory()) {
+    const indexPath = join(root, "index.html");
+    if (existsSync(indexPath)) {
+      response.writeHead(200, { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "no-store" });
+      createReadStream(indexPath).pipe(response);
+      return;
+    }
     response.writeHead(404, { "Content-Type": "text/plain; charset=utf-8" });
     response.end("Not found");
     return;
