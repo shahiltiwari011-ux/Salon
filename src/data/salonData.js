@@ -1,5 +1,5 @@
 export const salonData = {
-  name: "Shine By Sparsh, Family Salon",
+  name: "Drashti Beauty Parlour",
   shortName: "Shine By Sparsh",
   category: "Family Salon",
   city: "Satna",
