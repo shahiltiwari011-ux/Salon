@@ -133,7 +133,7 @@ const renderFooter = (data) => `
       </div>
     </div>
     <div class="section-shell footer-bottom">
-      <p>© 2026 Shine By Sparsh. All rights reserved.</p>
+      <p>© 2026 Grace N Look's Academy & Beauty Salon. All rights reserved.</p>
     </div>
   </footer>
 `;
@@ -186,7 +186,7 @@ const renderAppointmentModal = (data) => `
       <div class="appointment-modal__header">
         <p class="eyebrow">Quick Booking</p>
         <h2>Book Your Appointment</h2>
-        <p>Reserve your preferred time at Shine By Sparsh, Satna.</p>
+        <p>Reserve your preferred time at Grace N Look's Academy & Beauty Salon, Satna.</p>
       </div>
       <form class="appointment-modal-form" novalidate>
         <div class="form-grid">
@@ -244,7 +244,7 @@ const renderHomePage = (data) => `
     ${renderNavbar(data, "home")}
     <section class="hero section-shell">
       <div class="hero__content reveal reveal--fast">
-        <p class="eyebrow">SHINE BY SPARSH • FAMILY SALON</p>
+        <p class="eyebrow">Grace N Look's Academy & Beauty Salon • Beauty Parlour · Kids & Ladies</p>
         <h1>${data.tagline}</h1>
         <p class="hero__copy">${data.subheading}</p>
         <div class="hero__actions">
@@ -267,12 +267,12 @@ const renderHomePage = (data) => `
         <div class="hero-card hero-card--image">
           <img
             src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=1400&q=80"
-            alt="Premium family salon interior and styling space in Satna"
+            alt="Grace N Look's beauty salon interior in Satna"
             fetchpriority="high"
           />
           <div class="hero-card__badge">
-            <span class="pill">Satna's Premier Family Salon</span>
-            <strong>Welcoming Men, Women & Kids</strong>
+            <span class="pill">Satna's Top Beauty Parlour</span>
+            <strong>Exclusively for Kids & Ladies</strong>
           </div>
         </div>
       </div>
@@ -298,10 +298,10 @@ const renderHomePage = (data) => `
 
     <section class="section-shell section-grid" style="padding-top: 5rem;">
       <div class="section-copy reveal">
-        <p class="eyebrow">Welcome to Shine By Sparsh</p>
+        <p class="eyebrow">Welcome to Grace N Look's Academy & Beauty Salon</p>
         <h2>Beauty Care With a Personal Touch</h2>
         <p>
-          Located at Sumit Bazar in Satna, Shine By Sparsh provides a refined, hygienic, and welcoming family salon environment for precision haircuts, skin facials, and daily grooming.
+          Located at Jeevan Jyoti Colony in Satna, Grace N Look's Academy & Beauty Salon provides a refined, hygienic, and welcoming beauty parlour exclusively for kids and ladies — offering expert bridal makeup, skin facials, and hair care.
         </p>
         <p>
           Our team focuses on personalized consultations, top-tier products, and high standards of cleanliness to ensure every visit leaves you looking your best and feeling confident.
@@ -356,7 +356,7 @@ const renderHomePage = (data) => `
     <section class="section-shell why-us" style="padding-top: 5rem;">
       <div class="section-head reveal" style="padding-top: 0;">
         <p class="eyebrow">Why Choose Us</p>
-        <h2>The Shine By Sparsh Standard</h2>
+        <h2>The Grace N Look's Academy & Beauty Salon Standard</h2>
       </div>
       <div class="benefits-grid">
         ${data.whyChooseUs
@@ -382,7 +382,7 @@ const renderHomePage = (data) => `
         </div>
         <div class="cta-actions">
           <a class="button button--primary" href="#contact">Book Appointment</a>
-          <a class="button button--secondary" href="tel:${data.phone}" aria-label="Call Shine By Sparsh at ${data.contactCtaLabel}">
+          <a class="button button--secondary" href="tel:${data.phone}" aria-label="Call Grace N Look's Academy & Beauty Salon at ${data.contactCtaLabel}">
             Call Now
           </a>
         </div>
@@ -396,7 +396,7 @@ const renderAboutPage = (data) => `
   ${renderSubpageHeader(
     "About Us",
     "Beauty Care With a Personal Touch",
-    "Discover Shine By Sparsh, a family salon experience created for clean, comfortable, and professional beauty care in Satna.",
+    "Discover Grace N Look's Academy & Beauty Salon — a dedicated beauty parlour exclusively for kids and ladies, offering expert bridal makeup, skin care, and hair services in Satna.",
     data,
     "about"
   )}
@@ -404,10 +404,10 @@ const renderAboutPage = (data) => `
     <section class="section-shell section-grid" style="padding-top: 1rem;">
       <div class="section-copy reveal">
         <p class="eyebrow">Our Story & Approach</p>
-        <h2>A Trustworthy Family Salon</h2>
+        <h2>A Trusted Beauty Parlour for Kids & Ladies</h2>
         <p>
-          ${data.name} is a premier family salon destination in
-          ${data.city}, ${data.state}. Our salon is built around professional care, expert styling, and customer satisfaction.
+          ${data.name} is a top-rated, women-owned beauty parlour in
+          ${data.city}, ${data.state}. Our salon is built around professional care, expert makeup artistry, and complete customer satisfaction.
         </p>
         <p>
           Our goal is to offer a welcoming experience that makes it effortless to discover services, locate our salon, and submit appointment requests with confidence.
@@ -439,7 +439,7 @@ const renderAboutPage = (data) => `
     <section class="section-shell why-us" style="padding-top: 4rem;">
       <div class="section-head reveal" style="padding-top: 0;">
         <p class="eyebrow">Our Standards</p>
-        <h2>Why Clients Trust Shine By Sparsh</h2>
+        <h2>Why Clients Trust Grace N Look's Academy & Beauty Salon</h2>
       </div>
       <div class="benefits-grid">
         ${data.whyChooseUs
@@ -476,7 +476,7 @@ const renderServicesPage = (data) => `
   ${renderSubpageHeader(
     "Service Menu",
     "Our Salon Services",
-    "Explore our professional hair, beauty, and grooming offerings designed for all members of the family.",
+    "Explore our professional bridal makeup, hair care, skin treatments, and beauty services exclusively for kids and ladies.",
     data,
     "services"
   )}
@@ -565,8 +565,8 @@ const renderGalleryPage = (data) => `
       <article class="cta-card reveal">
         <div>
           <p class="eyebrow">Love the Ambience?</p>
-          <h2>Visit Shine By Sparsh</h2>
-          <p>Book your visit today and experience top-tier family salon care.</p>
+          <h2>Visit Grace N Look's Academy & Beauty Salon</h2>
+          <p>Book your visit today and experience our expert beauty and makeup services.</p>
         </div>
         <div class="cta-actions">
           <a class="button button--primary" href="#contact">Book Appointment</a>
@@ -580,7 +580,7 @@ const renderGalleryPage = (data) => `
 const renderWhyUsPage = (data) => `
   ${renderSubpageHeader(
     "Why Choose Us",
-    "The Shine By Sparsh Advantage",
+    "The Grace N Look's Academy & Beauty Salon Advantage",
     "Discover why clients in Satna prefer our salon for everyday care and special grooming sessions.",
     data,
     "why-us"
@@ -680,7 +680,7 @@ const renderReviewsPage = (data) => `
       <div class="location-card reveal" style="margin-top: 0;">
         <div class="location-card__copy">
           <p class="eyebrow">Visit the salon</p>
-          <h2>Visit Shine By Sparsh</h2>
+          <h2>Visit Grace N Look's Academy & Beauty Salon</h2>
           <p>
             <strong>${data.name}</strong><br />
             ${data.address}<br />
@@ -734,7 +734,7 @@ const renderContactPage = (data) => `
             <div class="contact-card__icon">${icon("phone")}</div>
             <div class="contact-card__body">
               <h3>Contact</h3>
-              <a class="text-link text-link--bold" href="tel:${data.phone}" aria-label="Call Shine By Sparsh at ${data.contactCtaLabel}">${data.contactCtaLabel}</a>
+              <a class="text-link text-link--bold" href="tel:${data.phone}" aria-label="Call Grace N Look's Academy & Beauty Salon at ${data.contactCtaLabel}">${data.contactCtaLabel}</a>
             </div>
           </article>
         </aside>
@@ -792,7 +792,7 @@ const renderContactPage = (data) => `
       <div class="location-card reveal" style="margin-top: 0;">
         <div class="location-card__copy">
           <p class="eyebrow">Visit the salon</p>
-          <h2>Visit Shine By Sparsh</h2>
+          <h2>Visit Grace N Look's Academy & Beauty Salon</h2>
           <p>
             <strong>${data.name}</strong><br />
             ${data.address}<br />
