@@ -1,64 +1,64 @@
 export const salonData = {
-  name: "Drashti Beauty Parlour",
-  shortName: "Shine By Sparsh",
-  category: "Family Salon",
+  name: "Grace N Look's Academy & Beauty Salon",
+  shortName: "Grace N Look's",
+  category: "Beauty Parlour · Kids & Ladies",
   city: "Satna",
   state: "Madhya Pradesh",
   country: "India",
-  address: "1st Floor, Sumit Bazar, GMS City Centre, Umri, Pateri, Satna, Madhya Pradesh 485001",
+  address: "Shree Ram Apartment, Jeevan Jyoti Colony, Satna, Madhya Pradesh 485001",
   mapsUrl:
-    "https://www.google.com/maps/search/?api=1&query=Shine%20By%20Sparsh%2C%201st%20Floor%2C%20Sumit%20Bazar%2C%20GMS%20City%20Centre%2C%20Umri%2C%20Pateri%2C%20Satna%2C%20Madhya%20Pradesh%20485001",
+    "https://www.google.com/maps/search/?api=1&query=Grace%20N%20Look%27s%20Academy%20%26%20Beauty%20Salon%2C%20Shree%20Ram%20Apartment%2C%20Jeevan%20Jyoti%20Colony%2C%20Satna%2C%20Madhya%20Pradesh%20485001",
   canonicalUrl: "",
-  phone: "+919644664466",
-  contactCtaLabel: "Call 96446 64466",
+  phone: "+919827019427",
+  contactCtaLabel: "Call 098270 19427",
   appointmentEmail: "",
-  tagline: "Where Beauty Meets Confidence.",
+  tagline: "Beauty, Grace & Confidence — For Kids & Ladies.",
   subheading:
-    "Satna’s premier family salon destination offering precision hair care, revitalizing skin treatments, and modern grooming for everyone.",
-  locationSummary: "Sumit Bazar, Satna, MP",
+    "Satna's top-rated women-owned beauty salon & academy offering expert bridal makeup, hair care, skin treatments, and beauty services exclusively for kids and ladies.",
+  locationSummary: "Jeevan Jyoti Colony, Satna, MP",
   trustPoints: [
-    { title: "Expert Stylists", detail: "Dedicated hair & beauty professionals committed to perfection." },
-    { title: "Family Salon", detail: "Welcoming care for men, women, and kids of all ages." },
-    { title: "Premium Care", detail: "High-quality products and hygienic practices for lasting results." },
-    { title: "Prime Location", detail: "Conveniently located at Sumit Bazar, GMS City Centre, Satna." }
+    { title: "Expert Makeup Artists", detail: "Talented and patient artists delivering flawless bridal & party looks." },
+    { title: "Only for Kids & Ladies", detail: "A welcoming, safe space dedicated exclusively to kids and women." },
+    { title: "Women-Owned", detail: "Proudly women-owned and operated with care, passion, and expertise." },
+    { title: "4.9 ★ Rated", detail: "Over 810 happy clients — one of Satna's highest-rated beauty salons." }
   ],
   aboutHighlights: [
     {
-      title: "Professional Excellence",
-      detail: "A modern, serene salon space designed around clean, comfortable self-care."
+      title: "Bridal & Party Makeup",
+      detail: "Flawless, long-lasting makeup artistry for brides and special occasions by expert artists."
     },
     {
-      title: "Family Friendly Environment",
-      detail: "Approachable grooming and styling tailored for every family member."
+      title: "Beauty Academy",
+      detail: "Professional training and skill-building courses for aspiring beauty artists."
     },
     {
-      title: "Modern Aesthetics",
-      detail: "Contemporary styling techniques using top-tier products and equipment."
+      title: "Exclusively for Kids & Ladies",
+      detail: "A safe, welcoming, and dedicated space designed only for kids and women."
     },
     {
-      title: "Client-First Service",
-      detail: "Attentive consultations to ensure you get the exact look and care you desire."
+      title: "Women-Owned & Operated",
+      detail: "Proudly women-owned, delivering personalized and empathetic beauty care."
     }
   ],
   serviceCategories: [
     {
-      title: "Hair Care & Styling",
+      title: "Bridal & Party Makeup",
       verified: true,
-      note: "Expert cuts, iron styling, and custom coloring services.",
+      note: "Expert makeup artistry for weddings, engagements, and special occasions.",
       items: [
         {
-          name: "Precision Hair Cut",
-          description: "Custom haircuts tailored to your face shape and personal style.",
+          name: "Bridal Makeup",
+          description: "Flawless, natural bridal looks designed to last all day on your special day.",
           status: "verified"
         },
         {
-          name: "Sleek Hair Ironing",
-          description: "Professional heat styling for silky, smooth, and frizz-free hair.",
+          name: "Engagement Makeup",
+          description: "Elegant and radiant makeup for your engagement ceremony.",
           status: "verified"
         },
         {
-          name: "Hair Highlights & Color",
-          description: "Vibrant dimensional highlights and custom hair coloring treatments.",
+          name: "Party Makeup",
+          description: "Stunning party-ready glam looks for any occasion.",
           status: "verified"
         }
       ]
@@ -66,7 +66,7 @@ export const salonData = {
     {
       title: "Skin & Beauty Care",
       verified: true,
-      note: "Refreshing facials and essential beauty treatments.",
+      note: "Refreshing facials, threading, and essential beauty treatments for ladies.",
       items: [
         {
           name: "Revitalizing Facial",
@@ -86,23 +86,23 @@ export const salonData = {
       ]
     },
     {
-      title: "Grooming & Refresh",
+      title: "Hair Care & Styling",
       verified: true,
-      note: "Everyday grooming and beard styling for gentlemen.",
+      note: "Expert cuts, styling, and coloring for ladies and kids.",
       items: [
         {
-          name: "Beard Sculpting",
-          description: "Sharp beard trimming, shaping, and conditioning care.",
+          name: "Hair Cut & Styling",
+          description: "Custom haircuts tailored to your face shape and personal style.",
           status: "verified"
         },
         {
-          name: "Nourishing Hair Wash",
-          description: "Refreshing scalp massage, wash, and conditioning treatment.",
+          name: "Hair Highlights & Color",
+          description: "Vibrant dimensional highlights and custom hair coloring treatments.",
           status: "verified"
         },
         {
-          name: "Signature Styling Session",
-          description: "Complete blow-dry and finish for special occasions or daily confidence.",
+          name: "Kids Hair Cut",
+          description: "Gentle and fun haircuts for kids in a comfortable, friendly environment.",
           status: "verified"
         }
       ]
@@ -110,13 +110,13 @@ export const salonData = {
   ],
   featuredServices: [
     {
-      title: "Signature Hair Finish",
+      title: "Bridal & Party Makeup",
       description:
-        "Precision haircuts, sleek ironing, vibrant highlights, and custom treatments for your perfect look.",
+        "Stunning bridal, engagement, and party makeup by expert artists — flawless, natural, and built to last.",
       image:
-        "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1200&q=80",
-      alt: "Professional hair styling and cut",
-      cta: "Book Hair Service",
+        "https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=1200&q=80",
+      alt: "Professional bridal makeup artist at work",
+      cta: "Book Makeup Session",
       verified: true
     },
     {
@@ -130,12 +130,12 @@ export const salonData = {
       verified: true
     },
     {
-      title: "Family & Grooming Care",
+      title: "Hair Care for Ladies & Kids",
       description:
-        "Approachable grooming packages, beard care, and haircuts for adults and children in a friendly environment.",
+        "Expert haircuts, coloring, and styling services tailored for ladies and kids in a safe, friendly space.",
       image:
-        "https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=1200&q=80",
-      alt: "Family salon grooming experience",
+        "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1200&q=80",
+      alt: "Professional hair styling session",
       cta: "Plan a Visit",
       verified: true
     }
@@ -180,35 +180,36 @@ export const salonData = {
   ],
   whyChooseUs: [
     "Hygienic & sanitized environment with premium tools and products.",
-    "Personalized consultations to understand your specific hair & skin needs.",
-    "Welcoming family atmosphere suited for adults and children alike.",
-    "Convenient location at Sumit Bazar, Satna with easy accessibility.",
-    "Transparent service pricing and effortless online appointment booking.",
-    "Experienced stylists dedicated to delivering consistent, high-quality results."
+    "Expert bridal & party makeup artists with a reputation for flawless results.",
+    "Exclusively for kids and ladies — a safe, comfortable, and welcoming space.",
+    "Women-owned salon with a deep understanding of every client's beauty needs.",
+    "Conveniently located at Jeevan Jyoti Colony, Satna with easy accessibility.",
+    "4.9 ★ rated on Google with over 810 happy and satisfied clients."
   ],
   reviewCards: [
     {
-      title: "Top Rated Family Salon",
-      text: "Clients love our welcoming atmosphere, attentive service, and expert hair styling in Satna.",
+      title: "4.9 ★ — Top Rated in Satna",
+      text: "Over 810 happy clients love our bridal makeup, expert hair care, and warm atmosphere exclusively for ladies & kids.",
       cta: "View Google Reviews"
     },
     {
-      title: "Clean & Hygienic Space",
-      text: "Spotless facilities with high sanitation standards for complete peace of mind during every visit.",
+      title: "Flawless Bridal Makeup",
+      text: "\"Nisha ma'am is incredibly talented, patient, and truly understands what a bride wants on her special day.\" — Sapna Singh",
       cta: "Book Appointment"
     },
     {
-      title: "5-Star Customer Experience",
-      text: "Consistently rated highly for friendly staff, quality hair care, and relaxing skincare sessions.",
+      title: "Excellence in Every Service",
+      text: "\"I got a facial and a haircut, and both services exceeded my expectations.\" — rudra jaiswal",
       cta: "View Google Reviews"
     }
   ],
   formServices: [
-    "Hair Care & Cut",
-    "Hair Ironing & Styling",
-    "Hair Highlights & Color",
+    "Bridal Makeup",
+    "Engagement Makeup",
+    "Party Makeup",
     "Facial Care & Skincare",
-    "Grooming & Beard Care",
+    "Hair Cut & Styling",
+    "Kids Hair Cut",
     "General Appointment Request"
   ],
   socials: []

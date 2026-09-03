@@ -13,7 +13,7 @@ const navItems = [
 const renderNavbar = (data, currentRoute) => `
   <nav class="navbar" aria-label="Primary">
     <a class="brand" href="#home" aria-label="${data.name} home">
-      <span class="brand__eyebrow">Family Salon</span>
+      <span class="brand__eyebrow">${data.category}</span>
       <span class="brand__name">${data.shortName}</span>
     </a>
     <div class="nav-links desktop-nav">
